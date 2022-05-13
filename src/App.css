@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body{
+    position: absolute;
+    left : 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    margin: 20px auto;
+    text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form{
+    padding: 10px 30px;
+    display: block;
+    border: 2px black solid;
 }
+form input{
+    display: block;
+    margin: 20px auto;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px black solid;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button{
+    display: block;
+    margin: 20px auto;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(72, 162, 223);
+    background-color: #fff;
+    text-transform: uppercase;
+    border: 2px solid rgb(72, 162, 223);
+    font-weight: 600;
 }
+button:hover{
+    color: white;
+    background-color: rgb(72, 162, 223);  
+}
+div.game{
+    padding: 30px;
+    border: 2px black solid;
+}
+div.game p{
+    margin: 5px 10px;
+    padding: 5px;
+    display: inline-block;
+    min-width: 100px;
+    size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+}
+div.game p.choiceItem:hover{
+    cursor: pointer;
+    background-color: #ccc;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+div.game p.active{
+    background-color: #ccc;
+}
+div.game p.good{
+    background-color: rgb(23, 190, 51);
+}
+div.game p.bad{
+    background-color: red;
+}
+div.gameWindow{
+    max-width: 60vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+div.link{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(72, 162, 223);
+    background-color: #fff;
+    text-transform: uppercase;
+    border: 2px solid rgb(72, 162, 223);
+    font-weight: 600;
+}
+a:hover{
+    color: white;
+    background-color: rgb(72, 162, 223); 
 }
